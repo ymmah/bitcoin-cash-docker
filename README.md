@@ -1,19 +1,21 @@
-# bitcoin-cash-docker
-Docker images for Bitcoin Cash.
+# bitcoin-cash
+Docker images for Bitcoin Cash nodes.
+
+Provided for the community by nChain Ltd.
 
 ## Tags & Versions
-* latest, unlimited, unlimited-1.2, unlimited-1.2.0.1 - [Bitcoin Unlimited Cash v1.2.0.1](https://github.com/Danconnolly/bitcoin-cash-docker/blob/master/unlimited/1.2.0.1/Dockerfile)
-* abc, abc-0.17, abc-0.17.0 - [Bitcoin ABC v0.17.0](https://github.com/Danconnolly/bitcoin-cash-docker/blob/master/abc/0.17.0/Dockerfile)
+* unlimited, unlimited-1.2, unlimited-1.2.0.1 - [Bitcoin Unlimited Cash v1.2.0.1](https://github.com/nchain-research/bitcoin-cash-docker/blob/unlimited-1.2.0.1/docker/Dockerfile)
+* abc, abc-0.17, abc-0.17.0 - [Bitcoin ABC v0.17.0](https://github.com/nchain-research/bitcoin-cash-docker/blob/abc-0.17.0/docker/Dockerfile)
 
 Older versions:
-* unlimited-1.2.0.0 - [Bitcoin Unlimited Cash v1.2.0.0](https://github.com/Danconnolly/bitcoin-cash-docker/blob/master/unlimited/1.2.0.0/Dockerfile)
-* abc-0.16, abc-0.16.2 - [Bitcoin ABC v0.16.2](https://github.com/Danconnolly/bitcoin-cash-docker/blob/master/abc/0.16.2/Dockerfile)
-* abc-0.16.1 - [Bitcoin ABC v0.16.1](https://github.com/Danconnolly/bitcoin-cash-docker/blob/master/abc/0.16.1/Dockerfile)
+* unlimited-1.2.0.0 - [Bitcoin Unlimited Cash v1.2.0.0](https://github.com/nchain-research/bitcoin-cash-docker/blob/unlimited-1.2.0.0/docker/Dockerfile)
+* abc-0.16, abc-0.16.2 - [Bitcoin ABC v0.16.2](https://github.com/nchain-research/bitcoin-cash-docker/blob/abc-0.16.2/docker/Dockerfile)
+* abc-0.16.1 - [Bitcoin ABC v0.16.1](https://github.com/nchain-research/bitcoin-cash-docker/blob/abc-0.16.1/docker/Dockerfile)
 
 ## Quick Start
 
-* simple Unlimited node: `docker run -it --name bchunlim dconnolly/bitcoin-cash:latest`
-* simple ABC node: `docker run -it --name bchabc dconnolly/bitcoin-cash:abc`
+* simple Unlimited node: `docker run -it --name bchunlim nchain/bitcoin-cash:unlimited`
+* simple ABC node: `docker run -it --name bchabc nchain/bitcoin-cash:abc`
 
 To use `bitcoin-cli` you can use something like
 ````
@@ -27,7 +29,7 @@ a volume at this location using `-v host_dir:/data`.
 ## Configuration
 You can include your own `bitcoin.conf` in the `/data` volume.
 
-Some notes:
+Some notes on bitcoin.conf parameters:
 * `printtoconsole=1` - causes output to be sent to the standard output
 * `rpcallowip=::/0` - enables RPC port on docker internal network interface
 * do not set `daemon=1` otherwise the container will exit immediately
@@ -46,7 +48,7 @@ services need to use RPC.
 ## Examples
 Set RPC username and password through environment variables, expose RPC port:
 ````
-docker run -it --rm -p 8332:8332 -e BCH_RPC_USER='user' -e BCH_RPC_PASSWORD='abcde' dconnolly/bitcoin-cash
+docker run -it --rm -p 8332:8332 -e BCH_RPC_USER='user' -e BCH_RPC_PASSWORD='abcde' nchain/bitcoin-cash:abc
 ````
 You can then use bitcoin-cli from the docker host using something like `bitcoin-cli -rpcuser=user -rpcpassword=abcde getinfo`
 
@@ -61,7 +63,7 @@ docker service create --name bchunlim \
 	--secret bchrpcuser \
 	--secret bchrpcpassword \
 	--detach=true \
-	dconnolly/bitcoin-cash
+	nchain/bitcoin-cash:unlimited
 ````
 
 ### Docker Stack Example
@@ -71,7 +73,7 @@ version: "3.5"
 
 services:
   bchunlim:
-    image: dconnolly/bitcoin-cash:latest
+    image: nchain/bitcoin-cash:abc
     volumes:
       - bch-data:/data
     networks:
@@ -87,7 +89,7 @@ services:
     secrets:
       - bchrpcuser
       - bchrpcpassword
-    hostname: bchunlim
+    hostname: bchnode
     deploy:
       replicas: 1
       restart_policy:
@@ -113,4 +115,17 @@ configs:
   bchconf:
     file: ./bitcoin.conf
 ````
+
+## Versions, Implementations, & Tags
+We will maintain versions of the major Bitcoin Cash node implementations that are compatible with the
+current Bitcoin Cash network. Older versions which are no longer compatible will be removed. Versions
+may also be removed if they have a significant issue.
+
+The Dockerfile and related files for each implementation and version are stored in their own branch.
+
+We currently have Bitcoin ABC and Bitcoin Unlimited images and are working on others.
+
+## Copyright
+Copyright nChain Ltd 2018
+GNU General Public License v3.0
 
