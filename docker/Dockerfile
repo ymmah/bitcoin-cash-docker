@@ -1,8 +1,8 @@
 FROM debian:stretch-slim
 
-ENV BCH_VERSION 0.16.1
-ENV BCH_URL https://download.bitcoinabc.org/0.16.1/linux/bitcoin-abc-0.16.1-x86_64-linux-gnu.tar.gz
-ENV BCH_SHA256 aa561770a850a8cdc1872eabc67502e5533e8ad16bafc20ea14700811426d538
+ENV BCH_VERSION 0.16.2
+ENV BCH_URL https://download.bitcoinabc.org/${BCH_VERSION}/linux/bitcoin-abc-${BCH_VERSION}-x86_64-linux-gnu.tar.gz
+ENV BCH_SHA256 5eeadea9c23069e08d18e0743f4a86a9774db7574197440c6d795fad5cad2084
 
 ADD $BCH_URL /tmp/bitcoin.tar.gz
 RUN cd /tmp \
