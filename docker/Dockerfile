@@ -1,9 +1,11 @@
+# Copyright (c) 2018 nChain Ltd
+# Distributed under the GNU GPL v3.0, see accompanying file LICENSE for details
+# based on work by Adrian Macneil from https://github.com/amacneil/docker-bitcoin
 FROM debian:stretch-slim
 
-ENV BCH_VERSION 1.2.0.1
-#ENV BCH_URL https://www.bitcoinunlimited.info/downloads/BUcash-${BCH_VERSION}-linux64.tar.gz
-ENV BCH_URL https://github.com/BitcoinUnlimited/BitcoinUnlimitedWebDownloads/raw/master/BUcash-${BCH_VERSION}-linux64.tar.gz
-ENV BCH_SHA256 62d8e843576f6bd13fa5bc1f9b939577b63739eb99cbbd8bdec589cfdc774eb0
+ENV BCH_VERSION 1.3.0.0
+ENV BCH_URL https://www.bitcoinunlimited.info/downloads/BUcash-${BCH_VERSION}-linux64.tar.gz
+ENV BCH_SHA256 8bbc0f78842011086acee5a0f2c729e616da7d841ed7028d93e248286a6e889d
 
 ADD $BCH_URL /tmp/bitcoin.tar.gz
 RUN cd /tmp \
