@@ -1,4 +1,7 @@
 #!/bin/bash
+# Copyright (c) 2018 nChain Ltd
+# Distributed under the GNU GPL v3.0, see accompanying file LICENSE for details
+# based on work by Adrian Macneil from https://github.com/amacneil/docker-bitcoin
 
 if [[ "$1" == "bitcoin-cli" || "$1" == "bitcoin-tx" || "$1" == "bitcoind" || "$1" == "test_bitcoin" ]]; then
 	CMD="$1"
