@@ -4,7 +4,7 @@ Docker images for Bitcoin Cash nodes.
 Provided for the community by nChain Ltd.
 
 ## Tags & Versions
-* unlimited, unlimited-1.3, unlimited-1.3.0.0 - [Bitcoin Unlimited Cash v1.3.0.0](https://github.com/nchain-research/bitcoin-cash-docker/blob/unlimited-1.3.0.0/docker/Dockerfile)
+* unlimited, unlimited-1.3, unlimited-1.3.0, unlimited-1.3.0.0 - [Bitcoin Unlimited Cash v1.3.0.0](https://github.com/nchain-research/bitcoin-cash-docker/blob/unlimited-1.3.0.0/docker/Dockerfile)
 * abc, abc-0.17, abc-0.17.0 - [Bitcoin ABC v0.17.0](https://github.com/nchain-research/bitcoin-cash-docker/blob/abc-0.17.0/docker/Dockerfile)
 
 Older versions:
