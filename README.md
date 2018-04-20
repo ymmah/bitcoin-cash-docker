@@ -4,10 +4,11 @@ Docker images for Bitcoin Cash nodes.
 Provided for the community by nChain Ltd.
 
 ## Tags & Versions
-* unlimited, unlimited-1.2, unlimited-1.2.0.1 - [Bitcoin Unlimited Cash v1.2.0.1](https://github.com/nchain-research/bitcoin-cash-docker/blob/unlimited-1.2.0.1/docker/Dockerfile)
+* unlimited, unlimited-1.3, unlimited-1.3.0.0 - [Bitcoin Unlimited Cash v1.3.0.0](https://github.com/nchain-research/bitcoin-cash-docker/blob/unlimited-1.3.0.0/docker/Dockerfile)
 * abc, abc-0.17, abc-0.17.0 - [Bitcoin ABC v0.17.0](https://github.com/nchain-research/bitcoin-cash-docker/blob/abc-0.17.0/docker/Dockerfile)
 
 Older versions:
+* unlimited-1.2, unlimited-1.2.0.1 - [Bitcoin Unlimited Cash v1.2.0.1](https://github.com/nchain-research/bitcoin-cash-docker/blob/unlimited-1.2.0.1/docker/Dockerfile)
 * unlimited-1.2.0.0 - [Bitcoin Unlimited Cash v1.2.0.0](https://github.com/nchain-research/bitcoin-cash-docker/blob/unlimited-1.2.0.0/docker/Dockerfile)
 * abc-0.16, abc-0.16.2 - [Bitcoin ABC v0.16.2](https://github.com/nchain-research/bitcoin-cash-docker/blob/abc-0.16.2/docker/Dockerfile)
 * abc-0.16.1 - [Bitcoin ABC v0.16.1](https://github.com/nchain-research/bitcoin-cash-docker/blob/abc-0.16.1/docker/Dockerfile)
@@ -127,5 +128,8 @@ We currently have Bitcoin ABC and Bitcoin Unlimited images and are working on ot
 
 ## Copyright
 Copyright nChain Ltd 2018
-GNU General Public License v3.0
+
+Distributed under the GNU GPL v3.0, see accompanying file LICENSE for details
+
+Based on work by Adrian Macneil from https://github.com/amacneil/docker-bitcoin
 
