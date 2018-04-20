@@ -8,10 +8,10 @@ Provided for the community by nChain Ltd.
 * abc, abc-0.17, abc-0.17.0 - [Bitcoin ABC v0.17.0](https://github.com/nchain-research/bitcoin-cash-docker/blob/abc-0.17.0/docker/Dockerfile)
 
 Older versions:
-* unlimited-1.2, unlimited-1.2.0.1 - [Bitcoin Unlimited Cash v1.2.0.1](https://github.com/nchain-research/bitcoin-cash-docker/blob/unlimited-1.2.0.1/docker/Dockerfile)
-* unlimited-1.2.0.0 - [Bitcoin Unlimited Cash v1.2.0.0](https://github.com/nchain-research/bitcoin-cash-docker/blob/unlimited-1.2.0.0/docker/Dockerfile)
-* abc-0.16, abc-0.16.2 - [Bitcoin ABC v0.16.2](https://github.com/nchain-research/bitcoin-cash-docker/blob/abc-0.16.2/docker/Dockerfile)
-* abc-0.16.1 - [Bitcoin ABC v0.16.1](https://github.com/nchain-research/bitcoin-cash-docker/blob/abc-0.16.1/docker/Dockerfile)
+* unlimited-1.2, unlimited-1.2.0.1 - REMOVED, incompatible with May 2018 protocol upgrade
+* unlimited-1.2.0.0 - REMOVED, incompatible with May 2018 protocol upgrade
+* abc-0.16, abc-0.16.2 - REMOVED, incompatible with May 2018 protocol upgrade
+* abc-0.16.1 - REMOVED, incompatible with May 2018 protocol upgrade
 
 ## Quick Start
 
