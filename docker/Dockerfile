@@ -3,9 +3,9 @@
 # based on work by Adrian Macneil from https://github.com/amacneil/docker-bitcoin
 FROM debian:stretch-slim
 
-ENV BCH_VERSION 1.3.0.0
+ENV BCH_VERSION 1.3.0.1
 ENV BCH_URL https://www.bitcoinunlimited.info/downloads/BUcash-${BCH_VERSION}-linux64.tar.gz
-ENV BCH_SHA256 8bbc0f78842011086acee5a0f2c729e616da7d841ed7028d93e248286a6e889d
+ENV BCH_SHA256 4ebf0df5755fa2e3194906bfe38eeb797a22d58721beb733e39cb632da763e1a
 
 ADD $BCH_URL /tmp/bitcoin.tar.gz
 RUN cd /tmp \
