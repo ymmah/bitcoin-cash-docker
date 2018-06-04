@@ -5,12 +5,12 @@ Provided for the community by nChain Ltd.
 
 ## Tags & Versions
 * unlimited, unlimited-1.3, unlimited-1.3.0, unlimited-1.3.0.1 - [Bitcoin Unlimited Cash v1.3.0.1](https://github.com/nchain-research/bitcoin-cash-docker/blob/unlimited-1.3.0.1/docker/Dockerfile)
-* abc, abc-0.17, abc-0.17.1 - [Bitcoin ABC v0.17.1](https://github.com/nchain-research/bitcoin-cash-docker/blob/abc-0.17.1/docker/Dockerfile)
+* abc, abc-0.17, abc-0.17.2 - [Bitcoin ABC v0.17.2](https://github.com/nchain-research/bitcoin-cash-docker/blob/abc-0.17.2/docker/Dockerfile)
 * xt, xt-0.11, xt-0.11.0-I - [BitcoinXT v0.11.0-I](https://github.com/nchain-research/bitcoin-cash-docker/blob/xt-0.11.0-I/docker/Dockerfile)
 
 Older versions:
 * unlimited-1.3.0.0 - [Bitcoin Unlimited Cash v1.3.0.0](https://github.com/nchain-research/bitcoin-cash-docker/blob/unlimited-1.3.0.0/docker/Dockerfile)
-* abc-0.17.0 - Bitcoin ABC v0.17.0 - REMOVED
+* abc-0.17.1 - [Bitcoin ABC v0.17.1](https://github.com/nchain-research/bitcoin-cash-docker/blob/abc-0.17.1/docker/Dockerfile)
 
 ## Quick Start
 
