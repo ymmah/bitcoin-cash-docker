@@ -3,9 +3,9 @@
 # based on work by Adrian Macneil from https://github.com/amacneil/docker-bitcoin
 FROM debian:stretch-slim
 
-ENV BCH_VERSION 0.11.0-I
-ENV BCH_URL https://github.com/bitcoinxt/bitcoinxt/releases/download/v0.11I/bitcoin-xt-0.11.0-I-linux64.tar.gz
-ENV BCH_SHA256 a99b66f757fa9b476fdf91c7249f8bc83eb4130cf9a946d5c5db0a3c78570614
+ENV BCH_VERSION 0.11.0-J
+ENV BCH_URL https://github.com/bitcoinxt/bitcoinxt/releases/download/v0.11J/bitcoin-xt-0.11.0-J-linux64.tar.gz
+ENV BCH_SHA256 7c3ce442a50a5d1d04d4a6ddb011f278ca90cd22ac50c56726ca6ad0db24b6de
 
 RUN apt-get update \
 	&& apt-get install -y wget \
